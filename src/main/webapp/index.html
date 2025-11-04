@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Management System</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #e3f2fd, #f0f2f5);
+        text-align: center;
+    }
+
+    h2 {
+        color: #007bff;
+        font-size: 36px;
+        margin-bottom: 40px;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 250px;
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .button-container:hover {
+        transform: translateY(-5px);
+    }
+
+    button {
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+    }
+
+    button:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+    }
+
+    footer {
+        position: absolute;
+        bottom: 15px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    footer span {
+        color: #007bff;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <h2>Student Management System</h2>
+
+    <div class="button-container">
+        <button onclick="window.location.href='addstudent.jsp'">Add Student</button>
+        <button onclick="window.location.href='viewstudent.jsp'">View Students</button>
+        <button onclick="window.location.href='searchstudent.jsp'">Search Student</button>
+    </div>
+
+    <footer>
+        © <span>StudentMS</span> | All Rights Reserved
+    </footer>
+</body>
+</html>
